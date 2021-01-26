@@ -51,7 +51,7 @@ while (true) {
 
 // Extra credit
 
-let hours = 20;
+let hours = 60;
 let wage = 10;
 let averageTakeHomeAfterTaxesUS = 0.76;
 let totalPreTaxPaycheck = wage * hours;
