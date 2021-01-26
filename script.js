@@ -49,7 +49,9 @@ while (true) {
   }
 }
 
-let hours = 60;
+// Extra credit
+
+let hours = 20;
 let wage = 10;
 let averageTakeHomeAfterTaxesUS = 0.76;
 let totalPreTaxPaycheck = wage * hours;
@@ -65,6 +67,10 @@ if (hours <= 40) {
   console.log(`${totalPostTaxPaycheck} total posttax paycheck`);
   console.log(
     `Working ${hours} hours at a wage of ${wage} dollars an hour earned you a total of ${totalPreTaxPaycheck} before taxes. With an average US tax rate of 24% for a single payer household, your estimated take home after taxes is ${totalPostTaxPaycheck}.`
+  );
+  let weeksTillMillionare = Math.round(1000000 / totalPostTaxPaycheck);
+  console.log(
+    `If you made this same amount every week you would be a millionare in ${weeksTillMillionare} weeks.`
   );
 } else {
   console.log(`${wage} wage`);
