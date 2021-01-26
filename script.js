@@ -82,11 +82,8 @@ if (hours <= 40) {
   console.log(
     `Working ${hours} hours at a wage of ${wage} dollars an hour for the first 40 hours and ${overtimeWage} dollars an hour for the ${overtimeHours} hours of overtime you worked earned you a total of ${totalPreTaxPaycheck} before taxes. With an average US tax rate of 24% for a single payer household, your estimated take home after taxes is ${totalPostTaxPaycheck}.`
   );
+  let weeksTillMillionare = Math.round(1000000 / totalPostTaxPaycheck);
+  console.log(
+    `If you made this same amount every week you would be a millionare in ${weeksTillMillionare} weeks.`
+  );
 }
-
-let weeksTillMillionare = Math.round(
-  1000000 / (totalPostTaxPaycheck * averageTakeHomeAfterTaxesUS)
-);
-console.log(
-  `If you made this same amount every week you would be a millionare in ${weeksTillMillionare} weeks.`
-);
