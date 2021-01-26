@@ -11,13 +11,23 @@ const lifeEvents = [
   `I know several people who have graduated from Grand Circus bootcamps and they recommended it to me.`,
 ];
 
-grandRapidsGC
-  ? console.log(
-      `My name is ${name} and I am a student at Grand Circus in Grand Rapids, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
-    )
-  : console.log(
-      `My name is ${name} and I am a student at Grand Circus in Detroit, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
-    );
+// grandRapidsGC
+//   ? console.log(
+//       `My name is ${name} and I am a student at Grand Circus in Grand Rapids, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
+//     )
+//   : console.log(
+//       `My name is ${name} and I am a student at Grand Circus in Detroit, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
+//     );
+
+if (grandRapidsGC) {
+  console.log(
+    `My name is ${name} and I am a student at Grand Circus in Grand Rapids, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
+  );
+} else {
+  console.log(
+    `My name is ${name} and I am a student at Grand Circus in Detroit, Michigan. I am currently ${age} years old and my birthday is on ${birthday}.`
+  );
+}
 
 for (let i = 0; i < lifeEvents.length; i++) {
   console.log(lifeEvents[i]);
